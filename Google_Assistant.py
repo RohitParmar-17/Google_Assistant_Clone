@@ -6,7 +6,7 @@ from IPython.display import Markdown
 import speech_recognition as sr
 import pyttsx3
 
-genai.configure(api_key="AIzaSyBLP5015glVl5FCFtJYGoAKYCs3_KmgsbU")
+genai.configure(api_key="YOUR_GENERATED_KEY")
 model = genai.GenerativeModel('gemini-pro')
 
 def to_markdown(text):
@@ -32,7 +32,7 @@ def def_ques(ques):
     else:
         if "who created you" in ques.lower() and not flag1:
             flag1 = True
-            return "Nilay Koul Created Me"
+            return "Rohit Parmar Created Me"
 
         elif "what is your name" in ques.lower() or "who are you" in ques.lower() or "your name?" in ques.lower() and not flag2:
             flag2 = True
