@@ -5,7 +5,7 @@ import google.generativeai as genai
 from IPython.display import display, Audio
 from IPython.display import Markdown
 
-genai.configure(api_key="AIzaSyBLP5015glVl5FCFtJYGoAKYCs3_KmgsbU")
+genai.configure(api_key="YOUR_GENERATED_KEY")
 model = genai.GenerativeModel('gemini-pro')
 
 def to_markdown(text):
